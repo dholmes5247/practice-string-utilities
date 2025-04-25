@@ -13,6 +13,7 @@ console.log(stringUtils.capitalize('testing this code')); // capitalizes first l
 console.log(stringUtils.capitalize('gunnar')); // capitalizes first letter
 console.log(stringUtils.capitalize(52)); // undefined and prints console.log
 console.log(stringUtils.capitalize('turtle', ' fox', 'bird')); // returns turtle only capitalized
+console.log(stringUtils.capitalize('12345'));
 
 
 console.log(stringUtils.reverse("it is cold today")); // reverses the string

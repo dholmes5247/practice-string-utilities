@@ -1,4 +1,4 @@
-function validateInput(str) {
+function validateInput(str) {      // trying to validate the input is a string and prompt user if not
 	if(typeof str !== 'string') {
 		console.log(`This ${str} must be textual, please enter a "string"!`);
 		return false; // returns false if invalid input
@@ -6,7 +6,7 @@ function validateInput(str) {
 	return true; // return true if input is indeed valid
 }
 
-// stringUtils.js
+// stringUtils.js  Capatilizing the first letter of a string
 function capitalize(str) {
 	if (!validateInput(str)) return '';	
 	return str.charAt(0).toUpperCase() + str.slice(1) ;
@@ -17,7 +17,7 @@ function capitalize(str) {
 // console.log(capitalize('today today'));
 // console.log(capitalize(52));
 
-function reverse(str) {
+function reverse(str) {  //reverses the order of a string
 	if (!validateInput(str)) return'';
 	return str.split('').reverse().join('') 
 }
@@ -29,8 +29,8 @@ function reverse(str) {
 
 
 
-function contains (str, substr) {
-	if (!validateInput(str)) return 'X';
+function contains (str, substr) { // searches to see if it contains a particular substring
+	if (!validateInput(str)) return '';
 	return str.includes(substr) 
 }
 
